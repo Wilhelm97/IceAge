@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F67EA900-B930-420E-A20F-15F4E333F8B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IceAge</RootNamespace>
+    <AssemblyName>IceAge</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Terraria">
+      <HintPath>D:\Steam\steamapps\common\Terraria\Terraria.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Debugger.cs" />
+    <Compile Include="Dusts\EtherealFlame.cs" />
+    <Compile Include="Dusts\Smoke.cs" />
+    <Compile Include="Dusts\Sparkle.cs" />
+    <Compile Include="Earlygame\Weapons\BrokenSword.cs" />
+    <Compile Include="Earlygame\Weapons\DemonKillerSword.cs" />
+    <Compile Include="Earlygame\Weapons\ReforgedSword.cs" />
+    <Compile Include="Earlygame\Weapons\RevivedSword.cs" />
+    <Compile Include="Gores\ExampleTreeFX.cs" />
+    <Compile Include="Iceage.cs" />
+    <Compile Include="Items\Accessories\Hooks\IceHook.cs" />
+    <Compile Include="Items\Accessories\Wings\TutorialWing.cs" />
+    <Compile Include="Items\Armor\AbominationMask.cs" />
+    <Compile Include="Items\Armor\Breastplate.cs" />
+    <Compile Include="Items\Armor\BunnyMask.cs" />
+    <Compile Include="Items\Armor\LostBreastplate.cs" />
+    <Compile Include="Items\Armor\LostHelmet.cs" />
+    <Compile Include="Items\Armor\MageHood.cs" />
+    <Compile Include="Items\Armor\LostLeggings.cs" />
+    <Compile Include="Items\Armor\MageRobe.cs" />
+    <Compile Include="Items\Armor\Helmet.cs" />
+    <Compile Include="Items\Armor\Leggings.cs" />
+    <Compile Include="Items\Armor\PuritySpiritMask.cs" />
+    <Compile Include="Items\EarlyGame\Armor\WarriorBreastplate.cs" />
+    <Compile Include="Items\EarlyGame\Armor\WarriorHelmet.cs" />
+    <Compile Include="Items\EarlyGame\Armor\WarriorLeggings.cs" />
+    <Compile Include="Items\Models\MinionModel.cs" />
+    <Compile Include="Items\Placeable\IceBar.cs" />
+    <Compile Include="Items\Placeable\IceBiomeBlock.cs" />
+    <Compile Include="Items\Placeable\IceOre.cs" />
+    <Compile Include="Items\Placeable\IceWood.cs" />
+    <Compile Include="Items\Placeable\IceWoodWall.cs" />
+    <Compile Include="Items\Placeable\IWorkbench.cs" />
+    <Compile Include="Items\Tools\Allknowing.cs" />
+    <Compile Include="Items\Tools\Hamaxe.cs" />
+    <Compile Include="Items\Tools\WillsAxe.cs" />
+    <Compile Include="Items\Tools\WillsPickAxe.cs" />
+    <Compile Include="Items\Weapons\BrokenIce.cs" />
+    <Compile Include="Items\Weapons\ExtremeBullet.cs" />
+    <Compile Include="Items\Weapons\ExtremeGun.cs" />
+    <Compile Include="Items\Weapons\KatiesLostStaff.cs" />
+    <Compile Include="Items\Weapons\SpectreGun.cs" />
+    <Compile Include="Items\Weapons\WinterDualblade.cs" />
+    <Compile Include="Items\Weapons\Wisp.cs" />
+    <Compile Include="Projectiles\AnimatedPierce.cs" />
+    <Compile Include="Projectiles\BloodTailismanGlobalProjectile.cs" />
+    <Compile Include="Projectiles\BloodTalismanProjectile.cs" />
+    <Compile Include="Projectiles\BloodTalismanTargetProjectile.cs" />
+    <Compile Include="Projectiles\ExampleBullet.cs" />
+    <Compile Include="Projectiles\IceHook.cs" />
+    <Compile Include="Projectiles\MiniHammer.cs" />
+    <Compile Include="Projectiles\PhantomBlade.cs" />
+    <Compile Include="Projectiles\PhantomHammerFriendly.cs" />
+    <Compile Include="Projectiles\PhantomSphere.cs" />
+    <Compile Include="Projectiles\SparklingBall.cs" />
+    <Compile Include="Projectiles\Wisp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tiles\BarTile.cs" />
+    <Compile Include="Tiles\ExampleBlock.cs" />
+    <Compile Include="Tiles\ExampleTree.cs" />
+    <Compile Include="Tiles\IceBiomeTile.cs" />
+    <Compile Include="Tiles\OreTile.cs" />
+    <Compile Include="Tiles\WoodTile.cs" />
+    <Compile Include="Tiles\IWorkbench.cs" />
+    <Compile Include="MyPlayer.cs" />
+    <Compile Include="ModdedWorld.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build.txt" />
+    <Content Include="description.txt" />
+    <Content Include="Dusts\EtherealFlame.png" />
+    <Content Include="Dusts\Smoke.png" />
+    <Content Include="Dusts\Sparkle.png" />
+    <Content Include="Earlygame\Weapons\BrokenSword.png" />
+    <Content Include="Earlygame\Weapons\DemonKillerSword.png" />
+    <Content Include="Earlygame\Weapons\ReforgedSword.png" />
+    <Content Include="Earlygame\Weapons\RevivedSword.png" />
+    <Content Include="Gores\ExampleTreeFX.png" />
+    <Content Include="Items\Accessories\Hooks\IceHook.png" />
+    <Content Include="Items\Accessories\Wings\TutorialWing.png" />
+    <Content Include="Items\Accessories\Wings\TutorialWing_Wings.png" />
+    <Content Include="Items\Armor\AbominationMask.png" />
+    <Content Include="Items\Armor\AbominationMask_Head.png" />
+    <Content Include="Items\Armor\Breastplate.png" />
+    <Content Include="Items\Armor\Breastplate_Arms.png" />
+    <Content Include="Items\Armor\Breastplate_Body.png" />
+    <Content Include="Items\Armor\Breastplate_FemaleBody.png" />
+    <Content Include="Items\Armor\BunnyMask.png" />
+    <Content Include="Items\Armor\BunnyMask_Head.png" />
+    <Content Include="Items\Armor\LostBreastplate.png" />
+    <Content Include="Items\Armor\LostBreastplate_Arms.png" />
+    <Content Include="Items\Armor\LostBreastplate_Body.png" />
+    <Content Include="Items\Armor\LostBreastplate_FemaleBody.png" />
+    <Content Include="Items\Armor\LostHelmet.png" />
+    <Content Include="Items\Armor\LostHelmet_Head.png" />
+    <Content Include="Items\Armor\MageHood.png" />
+    <Content Include="Items\Armor\MageHood_Head.png" />
+    <Content Include="Items\Armor\LostLeggings.png" />
+    <Content Include="Items\Armor\LostLeggings_Legs.png" />
+    <Content Include="Items\Armor\MageRobe.png" />
+    <Content Include="Items\Armor\MageRobe_Arms.png" />
+    <Content Include="Items\Armor\MageRobe_Body.png" />
+    <Content Include="Items\Armor\MageRobe_FemaleBody.png" />
+    <Content Include="Items\Armor\MageRobe_Legs.png" />
+    <Content Include="Items\Armor\Helmet.png" />
+    <Content Include="Items\Armor\Helmet_Head.png" />
+    <Content Include="Items\Armor\Leggings.png" />
+    <Content Include="Items\Armor\Leggings_Legs.png" />
+    <Content Include="Items\Armor\PuritySpiritMask.png" />
+    <Content Include="Items\Armor\PuritySpiritMask_Head.png" />
+    <Content Include="Items\EarlyGame\Armor\WarriorBreastplate.png" />
+    <Content Include="Items\EarlyGame\Armor\WarriorBreastplate_Arms.png" />
+    <Content Include="Items\EarlyGame\Armor\WarriorBreastplate_Body.png" />
+    <Content Include="Items\EarlyGame\Armor\WarriorBreastplate_FemaleBody.png" />
+    <Content Include="Items\EarlyGame\Armor\WarriorHelmet.png" />
+    <Content Include="Items\EarlyGame\Armor\WarriorHelmet_Head.png" />
+    <Content Include="Items\EarlyGame\Armor\WarriorLeggings.png" />
+    <Content Include="Items\EarlyGame\Armor\WarriorLeggings_Legs.png" />
+    <Content Include="Items\Placeable\IceBar.png" />
+    <Content Include="Items\Placeable\IceBiomeBlock.png" />
+    <Content Include="Items\Placeable\IceOre.png" />
+    <Content Include="Items\Placeable\IceWood.png" />
+    <Content Include="Items\Placeable\IceWoodWall.png" />
+    <Content Include="Items\Placeable\IWorkbench.png" />
+    <Content Include="Items\Tools\Allknowing.png" />
+    <Content Include="Items\Tools\Hamaxe.png" />
+    <Content Include="Items\Tools\WillsAxe.png" />
+    <Content Include="Items\Tools\WillsPickAxe.png" />
+    <Content Include="Items\Weapons\BrokenIce.png" />
+    <Content Include="Items\Weapons\ExtremeBullet.png" />
+    <Content Include="Items\Weapons\ExtremeGun.png" />
+    <Content Include="Items\Weapons\KatiesLostStaff.png" />
+    <Content Include="Items\Weapons\SpectreGun.png" />
+    <Content Include="Items\Weapons\WinterDualblade.png" />
+    <Content Include="Items\Weapons\Wisp.png" />
+    <Content Include="Projectiles\AnimatedPierce.png" />
+    <Content Include="Projectiles\BloodTalismanProjectile.png" />
+    <Content Include="Projectiles\BloodTalismanTargetProjectile.png" />
+    <Content Include="Projectiles\ExampleBullet.png" />
+    <Content Include="Projectiles\IceHook.png" />
+    <Content Include="Projectiles\MiniHammer.png" />
+    <Content Include="Projectiles\PhantomBlade.png" />
+    <Content Include="Projectiles\PhantomHammerFriendly.png" />
+    <Content Include="Projectiles\PhantomSphere.png" />
+    <Content Include="Projectiles\SparklingBall.png" />
+    <Content Include="Projectiles\TutorialHookChain.png" />
+    <Content Include="Projectiles\Wisp.png" />
+    <Content Include="Tiles\BarTile.png" />
+    <Content Include="Tiles\ExampleBlock.png" />
+    <Content Include="Tiles\ExampleTree.png" />
+    <Content Include="Tiles\ExampleTree_Branches.png" />
+    <Content Include="Tiles\ExampleTree_Tops.png" />
+    <Content Include="Tiles\IceBiomeTile.png" />
+    <Content Include="Tiles\OreTile.png" />
+    <Content Include="Tiles\WoodTile.png" />
+    <Content Include="Tiles\IWorkbench.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"D:\Steam\steamapps\common\Terraria\Terraria.exe" -build "$(ProjectDir)\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
